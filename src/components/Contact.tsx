@@ -17,7 +17,7 @@ const Contact = () => {
               <div className="contact-item">
                 <h3>Phone</h3>
                 <p>Call us to discuss your contract needs</p>
-                <a href="https://wa.me/18687777777" className="contact-link contact-link-whatsapp" aria-label="Open WhatsApp" title="Open WhatsApp">1-868-777-7777</a>
+                <a href="https://wa.me/1-868-xxx-xxxx" className="contact-link contact-link-whatsapp" aria-label="Open WhatsApp" title="Open WhatsApp">1-868-777-7777</a>
                 {/* <p className="contact-value" >1-868-777-777</p> */}
               </div>
 
