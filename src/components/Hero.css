@@ -1,0 +1,100 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.trini-flag-header {
+  margin-bottom: 1rem;
+}
+
+.flag-icon {
+  font-size: 3rem;
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero-location {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #FFD700;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 20% center;
+  }
+
+  .flag-icon {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-location {
+    font-size: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+

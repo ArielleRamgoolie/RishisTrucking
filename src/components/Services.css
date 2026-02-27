@@ -1,0 +1,95 @@
+.services {
+  padding: 6rem 2rem;
+  background-color: white;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.services-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 0;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 168, 232, 0.25);
+  border-color: #00A8E8;
+}
+
+.service-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-image-forklift {
+  object-position: center 80%;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin: 1.5rem 1.5rem 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  padding: 0 1.5rem 2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
